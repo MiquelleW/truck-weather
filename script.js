@@ -10,11 +10,6 @@ async function getWeather() {
   const data = await response.json();
   console.log(data);
 
-  const icon = document.createElement("p");
-  icon.className = "fs-4";
-  icon.textContent = getIcon(data.current.weather_code);
-  weatherArea.appendChild(icon);
-
   // Temp
   const temp = document.createElement("p");
   temp.className = "fs-4";
